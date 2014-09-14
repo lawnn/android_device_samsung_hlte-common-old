@@ -57,9 +57,6 @@ BOARD_HARDWARE_CLASS += $(LOCAL_PATH)/cmhw
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/hlte-common/ril
 
-# Graphics
-TARGET_HAVE_NEW_GRALLOC := true
-
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
