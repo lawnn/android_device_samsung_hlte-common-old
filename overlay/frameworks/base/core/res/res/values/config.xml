@@ -326,4 +326,7 @@
         <item>lte:524288,1048576,2097152,262144,524288,1048576</item>
     </string-array>
 
+    <!-- enable doze powersaving mode -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
 </resources>
