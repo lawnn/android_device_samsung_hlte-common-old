@@ -107,6 +107,10 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
+# IR
+PRODUCT_PACKAGES += \
+    consumerir.msm8974
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/Button_Jack.kl:system/usr/keylayout/Button_Jack.kl \
