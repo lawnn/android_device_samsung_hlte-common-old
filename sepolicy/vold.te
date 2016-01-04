@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 allow vold persist_file:dir { read getattr open ioctl };
 allow vold persist_data_file:dir { read getattr };
 allow vold sensors_data_file:dir { read getattr open ioctl };
+=======
+allow vold efs_file:dir r_file_perms;
+>>>>>>> 15af19d... hltedcm: Update sepolicy
