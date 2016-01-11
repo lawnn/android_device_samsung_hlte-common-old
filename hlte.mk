@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
+# Busybox
+PRODUCT_PACKAGES += \
+    busybox
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
