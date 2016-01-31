@@ -324,10 +324,8 @@ vendor/lib/libTimeService.so
 etc/wifi/bcmdhd_apsta.bin
 etc/wifi/bcmdhd_mfg.bin
 etc/wifi/bcmdhd_sta.bin
-etc/wifi/cred.conf
 etc/wifi/nvram_mfg.txt
 etc/wifi/nvram_net.txt
-etc/wifi/wpa_supplicant.conf
 
 #perf api
 /vendor/lib/libqti-perfd-client.so
