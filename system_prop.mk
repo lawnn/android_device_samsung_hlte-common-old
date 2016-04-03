@@ -52,7 +52,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     persist.radio.add_power_save=1 \
     persist.radio.lte_vrat_report=1 \
-    persist.radio.mode_pref_nv10=1 
+    persist.radio.mode_pref_nv10=1
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
