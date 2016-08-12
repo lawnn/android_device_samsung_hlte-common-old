@@ -907,10 +907,10 @@ on boot
     # Power Hal Permissions
     chown system system /sys/class/input/input2/enabled
     chown system system /sys/class/input/input3/enabled
-    chown system system /sys/class/input/input18/enabled
+    chown system system /sys/class/input/input15/enabled
     chmod 0660 /sys/class/input/input2/enabled
     chmod 0660 /sys/class/input/input3/enabled
-    chmod 0660 /sys/class/input/input18/enabled
+    chmod 0660 /sys/class/input/input15/enabled
 
     # Sensors
     chown system system /efs/FactoryApp/baro_delta
