@@ -63,6 +63,9 @@ BOARD_HARDWARE_CLASS += $(LOCAL_PATH)/cmhw
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/hlte-common/ril
 
+# Graphics
+TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
