@@ -114,7 +114,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 # SONY NFC
-ifeq ($(filter hltedcm hltekdi js01lte,$(TARGET_DEVICE)),)
+ifeq ($(BOARD_NFC_CHIPSET),sony)
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcSony \
@@ -128,7 +128,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 # NFC
-ifeq ($(filter hlte hltetmo hltespr hlteusc hltevzw,$(TARGET_DEVICE)),)
+ifeq ($(BOARD_NFC_CHIPSET),pn547)
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
