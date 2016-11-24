@@ -135,13 +135,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     ueventd.qcom.rc
 
-# Ramdisk for felica
-ifeq ($(filter hltedcm hltekdi js01lte,$(TARGET_DEVICE)),)
-PRODUCT_PACKAGES += \
-    init.carrier.rc \
-    init.felica.sh
-endif
-
 # SPN override
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
