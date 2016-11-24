@@ -113,38 +113,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
-# SONY NFC
-ifeq ($(BOARD_NFC_CHIPSET),sony)
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    NfcSony \
-    Tag
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-    $(LOCAL_PATH)/configs/sony_nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/configs/sony_nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/configs/sony_nfc/nfcee_access.xml:system/etc/nfcee_access.xml
-endif
-
-# NFC
-ifeq ($(BOARD_NFC_CHIPSET),pn547)
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    NfcNci \
-    nfc_nci.bcm2079x.msm8974 \
-    Tag
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-    $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
-endif
-
 # NFC Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-    $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml \
     $(LOCAL_PATH)/configs/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf \
     $(LOCAL_PATH)/configs/libnfc-brcm-20791b04.conf:system/etc/libnfc-brcm-20791b04.conf
 
