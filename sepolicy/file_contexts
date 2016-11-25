@@ -37,3 +37,14 @@
 /efs/FactoryApp(/.*)?  					u:object_r:efs_file:s0
 /efs/imei	  					u:object_r:efs_file:s0
 /efs/mps_code.dat					u:object_r:efs_file:s0
+
+#Felica
+/dev/felica(.*)						u:object_r:felica_device:s0
+/efs/FeliCaLock/0(.*)					u:object_r:felica_efs_file:s0
+/system/bin/mfdp					u:object_r:mfdp_exec:s0
+/system/bin/mfsc					u:object_r:mfsc_exec:s0
+
+# SNFC
+/dev/ttyHS1		               	                u:object_r:felica_device:s0
+/dev/snfc(.*)			                        u:object_r:felica_device:s0
+/dev/uartcc						u:object_r:nfc_device:s0
