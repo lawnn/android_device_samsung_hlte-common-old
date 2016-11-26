@@ -62,9 +62,6 @@ USE_DEVICE_SPECIFIC_GPS := true
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/hlte-common/ril
 
-# Graphics
-TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
-
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
